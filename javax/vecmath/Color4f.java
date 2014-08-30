@@ -111,36 +111,4 @@ public class Color4f extends Tuple4f implements Serializable {
 	// super(); called implicitly.
     }
 
-    /**
-     * Constructs color from awt.Color.
-     *
-     * @param color awt color
-     */
-    public Color4f(java.awt.Color color) {
-        x = ((float)color.getRed())/255;
-        y = ((float)color.getGreen())/255;
-        z = ((float)color.getBlue())/255;
-        w = ((float)color.getAlpha())/255;
-    }
-
-    /**
-     * Sets color from awt.Color.
-     * @param color awt color
-     */
-    public final void set(java.awt.Color color) {
-        x = ((float)color.getRed())/255;
-        y = ((float)color.getGreen())/255;
-        z = ((float)color.getBlue())/255;
-        w = ((float)color.getAlpha())/255;
-    }
-     
-    /**
-     * Gets awt.Color.
-     *
-     * @return color awt color
-     */
-    // not implemented in gcj 3.0.3/3.0.4.
-    //public final java.awt.Color get() {
-    //    return new java.awt.Color(x, y, z, w);
-    //}
 }

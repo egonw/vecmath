@@ -105,35 +105,4 @@ public class Color4b extends Tuple4b implements Serializable {
 	// super(); called implicitly.
     }
 
-    /**
-     * Constructs color from awt.Color.
-     *
-     * @param color awt color
-     */
-    public Color4b(java.awt.Color color) {
-        x = (byte)color.getRed();
-        y = (byte)color.getGreen();
-        z = (byte)color.getBlue();
-        w = (byte)color.getAlpha();
-    }
-
-    /**
-     * Sets color from awt.Color.
-     * @param color awt color
-     */
-    public final void set(java.awt.Color color) {
-        x = (byte)color.getRed();
-        y = (byte)color.getGreen();
-        z = (byte)color.getBlue();
-        w = (byte)color.getAlpha();
-    }
-     
-    /**
-     * Gets awt.Color.
-     *
-     * @return color awt color
-     */
-    public final java.awt.Color get() {
-        return new java.awt.Color(x, y, z, w);
-    }
 }
